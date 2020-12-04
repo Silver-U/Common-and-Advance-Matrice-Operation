@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Matrice
 {
     private int rows;
@@ -36,5 +38,20 @@ public class Matrice
     public double[][] getMatrice()
     {
         return matrice;
+    }
+
+    public void setMatrice(double[][] matrice)
+    {
+        this.matrice = matrice;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Matrice{" +
+                "rows=" + rows +
+                ", cols=" + cols +
+                ", matrice=" + Arrays.toString(matrice) +
+                '}';
     }
 }
